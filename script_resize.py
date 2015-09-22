@@ -1,7 +1,10 @@
 from PIL import Image
+import os,sys 
 
-img = Image.open('testrendu1/Camera.001.0.png')
+inputPath=sys.argv[1]
+outputPath=sys.argv[2]
+img = Image.open(inputPath)
 img = img.resize((1000,1000))
-img.save('testrendu1/resized_image.png')
+img.save(outputPath)
 
 
