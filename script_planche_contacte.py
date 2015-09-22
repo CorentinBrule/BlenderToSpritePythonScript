@@ -5,7 +5,7 @@ from math import ceil
 import sys
 
 #input largeur de la mozaic
-mozaicGrid=3
+mozaicGrid=int(input("number of images to mozaic width : "))
 
 #origines des boxes
 x0=0
