@@ -2,6 +2,7 @@
 
 from PIL import Image
 from math import ceil
+import sys
 
 #input largeur de la mozaic
 mozaicGrid=3
@@ -11,7 +12,7 @@ x0=0
 y0=0
 
 #input images
-images= ["Camera.001.0.png","Camera.002.0.png","Camera.001.12.png","Camera.002.12.png","Camera.001.18.png","Camera.001.24.png"]
+images= sys.argv[1:]
 nbImages=len(images)
 
 #liste des images PIL
